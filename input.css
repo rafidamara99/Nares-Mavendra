@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* down animasi scroll more */
+
+@keyframes fadeDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+  
+  .animate-fade-down {
+    animation: fadeDown 2s ease-in-out infinite;
+  }
+
+/* navbar blur on scroll */
+header {
+    background-color: transparent; /* Navbar transparan */
+    transition: background-color 0.3s ease; /* Transisi halus saat mengganti warna */
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.8); /* Warna latar belakang dengan transparansi */
+    backdrop-filter: blur(5px); /* Efek blur */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan efek bayangan */
+}
+
+.link-hover {
+    @apply hover:underline hover:underline-offset-8 decoration-2 hover:bg-gradient-to-r from-teal-500 to-blue-600 hover:bg-clip-text hover:text-transparent transition duration-300 ease-in-out;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Gallery Slider ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.gallery-slider img {
+    width: 100%; /* Membuat gambar memenuhi lebar kontainer */
+    height: auto; /* Menjaga rasio aspek gambar */
+    border-radius: 10px; /* Menambahkan sudut membulat jika diinginkan */
+}
+
+.slick-prev {
+    color: #2a2a2a !important; /* Ganti dengan warna yang Anda inginkan */
+    z-index: 50 !important;
+}
+
+.slick-next {
+    color: #2a2a2a !important; /* Ganti dengan warna yang Anda inginkan */
+    z-index: 50 !important;
+    right: 0 !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #2a2a2a !important; /* Ganti dengan warna yang Anda inginkan */
+    font-size: 50px !important;
+    
+}
+
+.slick-dots li.slick-active button:before {
+    color: black !important;
+}
+
+.slick-dots li button:before {
+    color: black !important;
+    margin-top: 20px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Dark Mode ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+body.dark {
+    background-color: #1a1a1a; /* Warna latar belakang gelap */
+    color: #f0f0f0; /* Warna teks terang */
+}
+
+body.dark .link-hover {
+    @apply hover:underline hover:underline-offset-8 decoration-2 hover:bg-gradient-to-r from-teal-500 to-blue-600 hover:bg-clip-text hover:text-transparent transition duration-300 ease-in-out;
+}
+
+body.dark .bg-slate-100 {
+    background-color: #2a2a2a; /* Warna latar belakang untuk elemen tertentu */
+}
+
+body.dark .bg-white {
+    background-color: #1a1a1a; /* Warna latar belakang untuk elemen tertentu */
+}
+
+body.dark .bg-gray-100 {
+    background-color: #3a3a3a; /* Warna latar belakang untuk elemen tertentu */
+}
+
+body.dark .text-slate-600 {
+    color: #e0e0e0; /* Warna teks untuk elemen tertentu */
+}
+
+body.dark header.bg-white {
+    background-color: rgba(0, 0, 0, 0.4); /* Warna latar belakang untuk elemen tertentu */
+}
+
+body.dark header.scrolled {
+    background-color: rgba(0, 0, 0, 0.6); /* Warna latar belakang dengan transparansi */
+    backdrop-filter: blur(10px); /* Efek blur */
+    box-shadow: 0 4px 10px rgba(74, 74, 74, 0.1); /* Tambahkan efek bayangan */
+}
+
+body.dark .slick-dots li.slick-active button:before {
+    color: white !important;
+}
+
+body.dark .slick-dots li button:before {
+    color: white !important;
+    margin-top: 20px;
+}
+
+body.dark .slick-prev {
+    color: whitesmoke !important;
+}
+
+body.dark .slick-prev:before {
+    color: whitesmoke !important;
+}
+
+body.dark .slick-next {
+    color: whitesmoke !important;
+}
+
+body.dark .slick-next:before {
+    color: whitesmoke !important;
+}
+
+
+.carousel-item {
+    position: relative; /* Agar deskripsi bisa diposisikan relatif terhadap item */
+    width: 100%; /* Lebar card */
+    height: 300px; /* Tinggi card */
+    overflow: hidden; /* Sembunyikan bagian gambar yang keluar dari card */
+}
+
+.carousel-item img {
+    width: 100%; /* Lebar gambar 100% dari card */
+    height: 100%; /* Tinggi gambar 100% dari card */
+    object-fit: contain; /* Pastikan gambar memenuhi card */
+}
+
+.description {
+    display: none; /* Sembunyikan deskripsi secara default */
+    position: absolute;
+    bottom: 0; /* Posisikan di bagian bawah */
+    left: 0; /* Posisikan di sisi kiri */
+    width: 100%; /* Lebar 100% dari elemen induk */
+    transform: translateY(0); /* Hapus transformasi horizontal */
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang semi-transparan */
+    color: white; /* Warna teks */
+    padding: 10px; /* Padding untuk card */
+    border-radius: 0 0 5px 5px; /* Sudut melengkung di bagian bawah */
+    z-index: 10; /* Pastikan card di atas gambar */
+    text-align: center; /* Rata tengah teks */
+    transition: all 0.3s ease; /* Transisi halus */
+}
+
+.carousel-item:hover .description {
+    display: block; /* Tampilkan deskripsi saat hover */
+}
+
+/* back to top */
+#back-to-top {
+    display: none; /* Sembunyikan tombol secara default */
+    cursor: pointer; /* Ubah kursor saat hover */
+    z-index: 1000; /* Pastikan tombol di atas elemen lainnya */
+}

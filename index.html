@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nares-Mavendra</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- cdnjs fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- cdnjs box icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    
+    <!-- cdnjs slick css -->
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
+    <!-- ~~~~~~~~~ aos init ~~~~~~~~~ -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+</head>
+<body class="font-itim">
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<header class="w-full mx-auto fixed top-0 py-3 z-50 bg-white bg-opacity-80 shadow-md">
+    <div class="container">
+        <div class="flex items-center justify-between">
+            <div class="logo">
+                <a href="#" class="text-3xl font-extrabold bg-gradient-to-r from-teal-400 to to-blue-500 hover:bg-gradient-to-r hover:from-teal-600 hover:to-blue-700 bg-clip-text text-transparent hover:opacity-90">
+                    NaresMavendra.
+                </a>
+            </div>
+
+            <div class="nav-link hidden lg:flex">
+                <ul class="flex items-center space-x-8">
+                    <li>
+                        <a href="#home" class="font-semibold text-slate-600 link-hover">
+                            <i class="fa-solid fa-house-chimney text-xl"></i>
+                            <span></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#about" class="font-semibold text-slate-600 link-hover">
+                            <!-- <i class="fa-solid fa-home"></i> -->
+                            <span>About</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#gallery" class="font-semibold text-slate-600 link-hover">
+                            <!-- <i class="fa-solid fa-home"></i> -->
+                            <span>Gallery</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="flex space-x-5 z-50">
+                <!-- Dark mode toggle -->
+                <div id="dark-toggle" class="cursor-pointer items-center text-2xl">
+                    <i id="toggle-icon" class="bx bx-sun"></i>
+                </div>
+    
+                <!-- Mobile Screen -->
+                <div id="hamburger" class="lg:hidden text-2xl z-50 cursor-pointer">
+                    <i id="toggle-hamburger" class="fa-solid fa-bars"></i>
+                </div>
+
+            </div>
+
+            <div id="mobile-menu" class="hidden bg-white shadow-md rounded-br-3xl rounded-bl-3xl h-[60vh] absolute inset-0">
+                <ul class="flex flex-col items-center justify-center gap-8 py-20">
+                    <li>
+                        <a href="#home" class="font-semibold text-slate-600 link-hover">
+                            <i class="fa-solid fa-house-chimney text-xl"></i>
+                            <span></span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#about" class="font-semibold text-slate-600 link-hover">
+                            <!-- <i class="fa-solid fa-home"></i> -->
+                            <span>About</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#gallery" class="font-semibold text-slate-600 link-hover">
+                            <!-- <i class="fa-solid fa-home"></i> -->
+                            <span>Gallery</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Home Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section id="home" class="relative w-full bg-cover bg-center bg-no-repeat bg-fixed h-[100vh]">
+    <div class="container pt-36 pb-36 lg:pt-48">
+        <div class="flex flex-col items-center justify-center lg:flex-row">
+            <div class="order-2 lg:order-1 text-center lg:w-1/2 lg:text-left lg:pr-10" data-aos="fade-left" data-aos-duration="1000">
+                <h2 class="text-slate-600 text-base font-semibold mb-2 lg:mb-2 leading-relaxed lg:text-xl">
+                    Hallo semuanya 👋, saya
+                </h2>
+
+                <h1 class="text-3xl lg:text-5xl font-bold bg-gradient-to-r from-teal-400 to to-blue-500 bg-clip-text text-transparent hover:opacity-90 mb-3 lg:mb-3 leading-snug">
+                    Nares Mavendra
+                </h1>
+
+                <p class="text-lg mb-5 lg:mb-6 lg:pr-12 leading-relaxed text-slate-600">
+                    Saat dunia berputar dalam krisis politik dan ekonomi, saya muncul ke dunia ini, siap membawa kebahagiaan dan sedikit kekacauan!
+                </p>
+                
+                <div class="scroll-down mt-8 lg:mt-12 flex items-center justify-center lg:justify-start">
+                    <div class="flex items-center">
+                    <i class="fa-solid fa-chevron-down bg-gradient-to-r from-teal-400 to to-blue-500 bg-clip-text text-transparent text-2xl mr-2 animate-fade-down"></i>
+                    <span class="text-slate-600 font-semibold text-lg animate-fade-down">
+                        Scroll Down for More
+                    </span>
+                    <i class="fa-solid fa-chevron-down bg-gradient-to-r from-teal-400 to to-blue-500 bg-clip-text text-transparent text-2xl ml-2 animate-fade-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-48 order-1 lg:order-2 mb-5 lg:justify-end lg:mb-0 lg:w-72" data-aos="fade-right" data-aos-duration="1000">
+                <img src="img/profile/Naresprofile.png" alt="Nares-Mavendra profile" class="rounded-full drop-shadow-xl hover:scale-105 transition-transform duration-500">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    #home {
+        background-image: url('img/bg/bg-minimalis2.jpg');
+    }
+
+    body.dark #home {
+        background-image: url('img/bg/dark-bg-minimalis.jpg'); /* Gambar untuk mode gelap */
+    }
+</style>
+
+
+
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ About Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section id="about" class="py-36 relative w-full bg-cover bg-center bg-no-repeat bg-fixed h-auto">
+    <h3 class="items-center text-center justify-center bg-gradient-to-r from-teal-400 to to-blue-500 bg-clip-text text-transparent text-2xl font-semibold mb-24" data-aos="fade-up" data-aos-duration="1000">
+        About Me!
+    </h3>
+    <div class="container">
+        <div class="w-full mx-auto flex flex-wrap">
+            <!-- image hero -->
+            <div class="w-full lg:w-1/2 flex items-center justify-center lg:justify-end lg:pr-12 mb-6 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
+                <img src="img/profile/Nareshero1.jpeg" alt="Nares-Mavendra" class="w-auto h-[60vh] rounded-br-[5rem] rounded-tl-[5rem] hover:scale-105 transition-transform duration-500">
+            </div>
+            
+            <!-- text about -->
+            <div class="w-full flex items-center justify-start lg:w-1/2" data-aos="fade-up" data-aos-duration="1400">
+                <div class="h-[60vh] bg-white bg-opacity-80 rounded-3xl px-4 py-2 lg:max-w-xs">
+                    <h3 class="text-2xl bg-gradient-to-r from-teal-500 to to-blue-500 bg-clip-text text-transparent mb-12">Sang villain kecil ini muncul ke permukaan pada :</h3>
+                    <!-- Hari / Tgl Lahir -->
+                    <div class="flex items-center space-x-5 mb-6 text-xl font-medium text-slate-600">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>
+                            : 15 Juli 2024
+                        </span>
+                    </div>
+                    <!-- Lokasi Kota lahir-->
+                    <div class="flex items-center space-x-5 mb-6 text-xl font-medium text-slate-600">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>
+                            : Jakarta, Indonesia.
+                        </span>
+                    </div>
+                    <!-- Bobot Lahir -->
+                    <div class="flex items-center space-x-5 mb-6 text-xl font-medium text-slate-600">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <span>
+                            : 2,7kg
+                        </span>
+                    </div>
+                    <!-- Ukuran Lahir -->
+                    <div class="flex items-center space-x-5 mb-6 text-xl font-medium text-slate-600">
+                        <i class="fa-solid fa-ruler"></i>
+                        <span>
+                            : -
+                        </span>
+                    </div>
+                    <!-- RS lahir -->
+                    <div class="flex items-center space-x-5 mb-6 text-xl font-medium text-slate-600">
+                        <i class="fa-regular fa-hospital"></i>
+                        <span>
+                            : Rs. Firdaus
+                        </span>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #about {
+        background-image: url('img/bg/bg-animals2.jpg');
+    }
+
+    body.dark #about {
+        background-image: url('img/bg/bg-dark-animals.jpg'); /* Gambar untuk mode gelap */
+    }
+</style>
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Gallery Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<section id="gallery" class="py-36 w-full bg-cover bg-center bg-no-repeat bg-fixed h-auto">
+    <div class="container">
+        <div class="w-full mx-auto">
+            <h3 class="text-2xl items-center justify-center text-center font-semibold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-12" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+                Gallery
+            </h3>
+
+            <div class="gallery-slider flex flex-wrap justify-center">
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+                    <img src="img/gallery/gallery1.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="50">
+                    <img src="img/gallery/gallery2.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;" data-aos="fade-up" data-aos-duration="1800" data-aos-offset="50">
+                    <img src="img/gallery/gallery3.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery4.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery5.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery6.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery7.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery8.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery9.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text -slate-300">
+                             
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery10.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;">
+                    <img src="img/gallery/gallery11.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item mx-2 bg-slate-100 rounded-lg overflow-hidden" style="width: 300px; height: 300px;" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+                    <img src="img/gallery/gallery12.jpeg" alt="Nares-Mavendra" class="object-cover w-full h-full">
+                    <div class="description">
+                        <p class="text-slate-300">
+                             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium mollitia doloremque explicabo asperiores officiis in modi nobis, earum voluptas illo.
+                        </p>
+                    </div>
+                </div>
+                <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #gallery {
+        background-image: url('img/bg/7192986.jpg');
+    }
+
+    body.dark #gallery {
+        background-image: url('img/bg/bg-dark-animals2.jpg'); /* Gambar untuk mode gelap */
+    }
+</style>
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Footer Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<footer class="bg-slate-950 text-slate-50 py-10">
+    <div class="container mx-auto flex flex-col items-center">
+        <h3 class="text-2xl font-bold mb-4">
+            Terhubung dengan Saya
+        </h3>
+        <p class="text-center mb-6">
+            Jika Anda memiliki pertanyaan atau ingin berkolaborasi, jangan ragu untuk menghubungi saya!
+        </p>
+        
+        <!-- Icon Media Sosial -->
+        <div class="flex items-center gap-3 mb-5">
+            <!-- Github -->
+            <a href="https://github.com/rafidamara99" target="_blank" class="w-9 h-9 rounded-full flex justify-center items-center border border-slate-500 text-slate-500 hover:border-none hover:bg-gradient-to-r from-teal-300 to-blue-400 hover:text-white transition duration-300 ease-in-out">
+                <i class="fa-brands fa-github text-2xl"></i>
+            </a>
+            <!-- Instagram -->
+             <a href="https://instagram.com/rafidamara99" target="_blank" class="w-9 h-9 rounded-full flex justify-center items-center border border-slate-500 text-slate-500 hover:border-none hover:bg-gradient-to-r from-teal-300 to-blue-400 hover:text-white transition duration-300 ease-in-out">
+                <i class="fa-brands fa-instagram text-2xl"></i>
+            </a>
+            <!-- Twitter / x -->
+             <a href="https://x.com/rafi_damara" target="_blank" class="w-9 h-9 rounded-full flex justify-center items-center border border-slate-500 text-slate-500 hover:border-none hover:bg-gradient-to-r from-teal-300 to-blue-400 hover:text-white transition duration-300 ease-in-out">
+                <i class="fa-brands fa-x-twitter text-2xl"></i>
+            </a>
+            <!-- LinkedIn -->
+             <a href="https://www.linkedin.com/in/wildan-rafi-damara-888294174/" target="_blank" class="w-9 h-9 rounded-full flex justify-center items-center border border-slate-500 text-slate-500 hover:border-none hover:bg-gradient-to-r from-teal-300 to-blue-400 hover:text-white transition duration-300 ease-in-out">
+                <i class="fa-brands fa-linkedin text-2xl"></i>
+            </a>
+        </div>
+
+        <div class="text-center">
+            <p class="text-sm">Designed with 💗 by <span class="bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent font-bold text-base">Wildan Rafieu Damara</span>.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Back to Top Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+<button id="back-to-top" class="fixed bottom-8 right-8 rounded-full cursor-pointer px-5 py-3 font-semibold bg-gradient-to-r from-teal-400 to-blue-500 text-white duration-200 ease-in-out">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+
+
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Section ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+
+
+
+    <!-- script js -->
+     <script src="js/script.js"></script>
+
+    <!-- script dark mode js -->
+     <script src="js/darkMode.js"></script>
+
+    <!-- script AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- box icon script -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- slick slider script -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+          $(".gallery-slider").slick({
+            dots: true,
+            arrows: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  centerMode: true,
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true,
+                },
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  arrows: false,
+                  dots: false,
+                  centerMode: true,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                },
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: false,
+                  dots: false,
+                  centerMode: true,
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                },
+              },
+            ],
+          });
+        });
+    </script>
+
+    <!-- back to top script -->
+    <script>
+        // Menangani scroll untuk menampilkan atau menyembunyikan tombol "Back to Top"
+        window.addEventListener('scroll', function() {
+            const backToTopButton = document.getElementById('back-to-top');
+            if (window.scrollY > 200) { // Tampilkan tombol jika scroll lebih dari 200px
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        // Menangani klik pada tombol "Back to Top"
+        document.getElementById('back-to-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Scroll ke atas dengan efek halus
+            });
+        });
+    </script>
+
+</body>
+</html>
