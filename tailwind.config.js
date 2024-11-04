@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         Inter: ['"Inter", serif;'],
-        itim: ['"Itim", cursive;']
+        itim: ['"Itim", cursive;'],
+        Caveat: ['"Caveat", cursive;'],
       },
     },
     container: {

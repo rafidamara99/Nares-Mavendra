@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Itim&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&family=Protest+Guerrilla&family=Roboto:wght@400;500;700&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -949,6 +949,10 @@ video {
   font-family: "Itim", cursive;;
 }
 
+.font-Caveat{
+  font-family: "Caveat", cursive;;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1001,11 +1005,6 @@ video {
 
 .leading-snug{
   line-height: 1.375;
-}
-
-.text-slate-300{
-  --tw-text-opacity: 1;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
 }
 
 .text-slate-50{
@@ -1155,14 +1154,14 @@ header.scrolled {
 .slick-prev {
   color: #2a2a2a !important;
   /* Ganti dengan warna yang Anda inginkan */
-  z-index: 50 !important;
+  z-index: 10 !important;
 }
 
 .slick-next {
   color: #2a2a2a !important;
   /* Ganti dengan warna yang Anda inginkan */
-  z-index: 50 !important;
-  right: 0 !important;
+  z-index: 10 !important;
+  right: 5px !important;
 }
 
 .slick-prev:before, .slick-next:before {
@@ -1283,6 +1282,7 @@ body.dark .slick-next:before {
 }
 
 .carousel-item img {
+  padding: 40px;
   width: 100%;
   /* Lebar gambar 100% dari card */
   height: 100%;
@@ -1304,7 +1304,7 @@ body.dark .slick-next:before {
   /* Lebar 100% dari elemen induk */
   transform: translateY(0);
   /* Hapus transformasi horizontal */
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #F2AD8C;
   /* Latar belakang semi-transparan */
   color: white;
   /* Warna teks */
